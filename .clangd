@@ -4,3 +4,20 @@ CompileFlags:
     - -Wall
     - -Wextra
     - -Wpedantic
+
+Diagnostics:
+  ClangTidy:
+    Add:
+      - bugprone-*
+      - clang-analyzer-*
+      - cppcoreguidelines-*
+      - google-*
+      - misc-*
+      - modernize-*
+      - performance-*
+      - readability-*
+    Remove:
+      - modernize-use-trailing-return-type
+      - cppcoreguidelines-avoid-magic-numbers
+      - readability-magic-numbers
+      - google-readability-todo
