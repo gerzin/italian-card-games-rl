@@ -1,0 +1,11 @@
+load("@rules_cc//cc:defs.bzl", "cc_test")
+
+cc_test(
+    name = "cards_test",
+    srcs = ["cards_test.cpp"],
+    deps = [
+        "//italian-card-games/common/cards",
+        "@googletest//:gtest",
+        "@googletest//:gtest_main",
+    ],
+)

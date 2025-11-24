@@ -1,0 +1,5 @@
+alias(
+    name = "cards",
+    actual = "//italian-card-games/common/cards:cards",
+    visibility = ["//visibility:public"],
+)
