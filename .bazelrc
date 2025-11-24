@@ -1,0 +1,15 @@
+build --cxxopt=-std=c++23
+build --host_cxxopt=-std=c++23
+
+build --cxxopt=-Wall
+build --cxxopt=-Wextra
+build --cxxopt=-Wpedantic
+
+build --jobs=auto
+
+# Compile commands refresh
+build --experimental_convenience_symlinks=normal
+
+# Test output configuration
+test --test_output=errors
+test --test_summary=detailed

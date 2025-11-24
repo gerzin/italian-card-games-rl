@@ -1,0 +1,10 @@
+{
+    // Bazel-specific
+    "files.watcherExclude": {
+        "**/bazel-*": true,
+        "**/.cache": true
+    },
+    "files.exclude": {
+        "bazel-*": true
+    }
+}
